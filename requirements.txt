@@ -1,0 +1,7 @@
+langchain==0.0.189
+PyGithub==1.58.2
+streamlit==1.23.1
+openai==0.27.7
+chromadb==0.3.25
+wikipedia==1.4.0
+tiktoken==0.4.0
