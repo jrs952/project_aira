@@ -15,8 +15,8 @@ import os
 ghMgr = GithubManager(github_key)
 tool_list = setup_tools(ghMgr)
 
-llm = OpenAI(openai_api_key=openai_key, temperature=0.5)
-agent = initialize_agent(llm=llm, tools=tool_list, agent="zero-shot-react-description", verbose=True)
+llm = OpenAI(openai_api_key=openai_key, temperature=0.5) #type: ignore
+agent = initialize_agent(llm=llm, tools=tool_list, agent="zero-shot-react-description", verbose=True) #type: ignore
 
 st.title("LangChain - Github Experiment")
 st.info("This is a demo of the LangChain Github Experiment. The goal of this experiment is to create a Github repository with a specified name.")
